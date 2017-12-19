@@ -5,7 +5,7 @@ here = path.abspath(path.dirname(__file__))
 
 setup(
     name='dask_parquet_integration',
-    version='1.0.0',
+    version='1.0.1',
     description='Files for integration testing parquet readers',
     url='https://github.com/dask/parquet_integration',
     author='Tom Augspurger',
@@ -21,6 +21,7 @@ setup(
     ],
     packages=find_packages(),
     package_data={
-        'dask_parquet_integration': ['data/*.parq'],
+        'dask_parquet_integration': ['data/*.parq',
+                                     'data/*.parq/*'],
     },
 )
